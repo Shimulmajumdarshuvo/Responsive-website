@@ -8,6 +8,11 @@ body{
    
    
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -34,7 +39,7 @@ body{
 
 
 
-
+/* first part css */
 
 .banner{
     height: calc(100vh - 80px);
@@ -66,7 +71,18 @@ body{
     align-items: flex-end;
 }
 .banner-right img{
-    width: 100%;
+    width: 80%;
+}
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    font-size: 40px;
+    display: inline-block;
+    
+    
+    margin: 50px 0;
+
 }
 
 
@@ -100,3 +116,49 @@ nav{
     font-weight: 600;
     padding: 15px 10px;
 }
+
+
+/* courses style */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    
+    
+}
+.course-banner{
+    border: 2px solid slateblue;
+    padding: 10px;
+    margin: 20px;
+    background-color: thistle;
+
+}
+
+.course .course-banner img {
+    width: 250px;
+    height: 250px;
+   text-align: center;
+
+
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+
+
+
+
+
