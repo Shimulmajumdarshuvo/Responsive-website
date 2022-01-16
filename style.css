@@ -128,16 +128,23 @@ nav{
     
     
 }
+.course-author{
+    font-size:18px ;
+}
+.para{
+    font-size: 12px;
+}
 .course-banner{
     border: 2px solid slateblue;
     padding: 10px;
+    
     
     background-color: thistle;
 
 }
 
 .course .course-banner img {
-    width: 250px;
+    width: 270px;
     height: 250px;
    text-align: center;
 
@@ -156,6 +163,48 @@ nav{
 }
 .fa-star.empty{
     color:#AEAEAE;
+}
+
+
+
+.footer-item{
+    height: 100%;
+    color: #ffff;
+    text-align: center;
+    background-color: #0A0826;
+    padding: 60px 0px;
+}
+.footer-item h1{
+    font-size: 30px;
+    margin: 0;
+    padding: 5px 0px;
+}
+.footer-item h2{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding:5px 0px;
+}
+.footer-item h3{
+    font-size: 18px;
+    margin: 0;
+    padding:5px 0px;
+    
+}
+.icon{
+    padding: 5px 0px;
+    font-size: 15px;
+    padding: 5px;
+    
+}
+#unic-icon{
+    border: .3px solid lightblue;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(66, 78, 90);
+    margin: 4px 5px ;
+    color: #ffff;
+
 }
 
 
