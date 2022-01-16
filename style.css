@@ -12,11 +12,13 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding:0 30px;
+    
 }
 .highlight{
     color: #FF008E;
@@ -128,18 +130,22 @@ nav{
     
     
 }
+
 .course-author{
     font-size:18px ;
+    margin: 0;
 }
 .para{
     font-size: 12px;
 }
+
 .course-banner{
-    border: 2px solid slateblue;
+    border: 2px solid rgb(222, 220, 236);
     padding: 10px;
+    border-radius:5px;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.61);
+    margin-bottom: 10px;
     
-    
-    background-color: thistle;
 
 }
 
@@ -164,6 +170,41 @@ nav{
 .fa-star.empty{
     color:#AEAEAE;
 }
+
+
+
+/* contact part css */
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.contact-left img{
+    width: 100%;
+}
+
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #FF008E;
+}
+
+
+.link{
+    text-align: right;
+    color: rgb(223, 6, 132);
+}
+
 
 
 
@@ -207,6 +248,62 @@ nav{
     margin: 4px 5px ;
     color: #ffff;
 
+}
+
+
+
+/* -----------media queries------------ */
+
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .banner,.contact{
+       
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        
+        
+    }
+
+    .banner-right img{
+        height: 200px;
+        width: 200px;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+
+    }
+    .courses{
+        flex-direction: column;
+    }
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .banner , .contact{
+       
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+
+    }
+    .banner-right img{
+        height: 300px;
+        width: 300px;
+    }
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+    }
+    .courses ,.contact{
+        flex-direction: column;
+    }
+     
+    
 }
 
 
